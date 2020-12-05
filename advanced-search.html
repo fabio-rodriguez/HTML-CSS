@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="icon" type="image/png" href="Google-favicon.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="index.html" >
+                <img id="nav-link" src="Google_Logo.webp">
+            </a>
+            
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-item nav-link pull-right" href="index.html">Google Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-item nav-link pull-right" href="images-search.html">Image Search</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h5 class="subtitle">
+            Advanced Search
+        </h5>
+
+        <hr>
+        
+        <div>
+            
+            <form class="form-data container-fluid" action="https://google.com/search" style="text-align: left;">
+                
+                <div class="form-group row">
+                    <label class="col-sm-4 col-md-2 col-form-label">Find pages with ... </label>
+                    <label class="col-md-3 offset-md-5">To do this in the search box. </label>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 col-md-2 col-form-label form-control-sm"> all these words: </label>
+                    <div class="col-sm-8 col-md-5">
+                        <input type="text" class="form-control form-control-sm" name="as_q">
+                    </div>
+                    <label class="col-sm-4 col-md-4 col-form-label form-control-sm label-example"> Type the important words: tri-colour rat terrier </label>    
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 col-md-2 col-form-label form-control-sm"> this exact word or phrase: </label>
+                    <div class="col-sm-8 col-md-5">
+                        <input type="text" class="form-control form-control-sm" name="as_epq">
+                    </div>
+                    <label class="col-sm-4 col-md-4 col-form-label form-control-sm label-example"> Put exact words in quotes: "rat terrier" </label>    
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 col-md-2 col-form-label form-control-sm"> any of these words: </label>
+                    <div class="col-sm-8 col-md-5">
+                        <input type="text" class="form-control form-control-sm" name="as_oq">
+                    </div>
+                    <label class="col-sm-4 col-md-4 col-form-label form-control-sm label-example"> Type OR between all the words you want: miniature OR standard </label>    
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-4 col-md-2 col-form-label form-control-sm"> none of these words: </label>
+                    <div class="col-sm-8 col-md-5">
+                        <input type="text" class="form-control form-control-sm" name="as_eq">
+                    </div>
+                    <label class="col-sm-4 col-md-4 col-form-label form-control-sm label-example"> Put a minus sign just before words that you don't want: -rodent, -"Jack Russell" </label>    
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-2 col-sm-4 offset-md-5 offset-sm-5">
+                        <input class="btn btn-primary form-control" type="submit" value="Advanced Search">
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        
+    </body>
+</html>
